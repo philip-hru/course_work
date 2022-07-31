@@ -1,0 +1,57 @@
+.gifts-for-all {
+  @include flex-column;
+
+  &-title {
+    text-align: center;
+    margin-top: 96px;
+    font-size: 32px;
+  }
+
+  &-under-title {
+    text-align: center;
+    font-size: 18px;
+    margin: 23px 0 64px 0;
+  }
+
+  &-img {
+    height: 270px;
+  }
+  &-cards-wrapper {
+    display: flex;
+    gap: 30px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.cards-wrapper-card {
+  background-color: $light-grey;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.card-under-title {
+  font-size: 14px;
+}
+
+.card-text {
+  padding: 24px;
+  @include flex-column;
+  gap: 74px;
+}
+
+.cards-wrapper-card:hover > .card-text {
+  background-color: white;
+  //   тени
+  -webkit-box-shadow: 5px 4px 5px 0px rgba(46, 74, 117, 0.43);
+  -moz-box-shadow: 5px 4px 5px 0px rgba(46, 74, 117, 0.43);
+  box-shadow: 5px 4px 5px 0px rgba(46, 74, 117, 0.43);
+}
+@media (max-width: 768px) {
+  .find-a-gift {
+    padding: 10px;
+  }
+} ;
